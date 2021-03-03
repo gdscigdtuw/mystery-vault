@@ -1,0 +1,220 @@
+<html>
+
+<head>
+    <title> Mystery Vault </title>
+    <!-- Load font awesome icons -->
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-
+awesome.min.css">
+</head>
+
+<body>
+    <style>
+        html {
+            scroll-behavior: auto;
+        }
+
+        /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        /* Style the icon bar links */
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Style the social media icons with color, if you want */
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .github {
+            /* background: white; */
+            color: white;
+        }
+
+        .linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        #desktop_1 {
+            /*background-color: #00D1B2;*/
+            background-image: linear-gradient(to right, black, #046988, #00D1B2);
+            height: 100%;
+            width: 100%;
+        }
+
+        .heading {
+            font-family: 'Ink Free';
+            color: white;
+            vertical-align: middle;
+            font-size: 275%;
+            padding-top: 10%;
+        }
+
+        #description {
+            font-family: 'Ink Free';
+            color: white;
+            vertical-align: middle;
+            font-size: 125%;
+            /*padding-top: 5%;*/
+
+        }
+
+        .getstarted {
+            background-color: #EC407A;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 20px 34px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 100%;
+            font-weight: bold;
+            font-family: 'Ink Free';
+            margin-top: 10%;
+            cursor: pointer;
+            box-shadow: 10px, black, outset;
+        }
+
+        #desktop_2 {
+            margin-top: 1%;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to right, #046988, #0fa098, #00D1B2);
+            font-size: 105%;
+            font-family: 'Ink Free';
+            font-weight: bold;
+            color: white;
+
+        }
+
+        .button {
+            background-color: #EC407A;
+            /*padding: 50%, 45%;*/
+            font-size: 85%;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            padding: 6px 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Ink Free';
+            font-weight: bold;
+        }
+
+        #about {
+            background-image: linear-gradient(to right, black, #046988, #00D1B2);
+            height: 100%;
+            width: 100%;
+            margin-top: 1%;
+            color: white;
+            font-family: 'Ink Free';
+        }
+
+        #aboutus
+        /*This is the heading*/
+            {
+            font-family: 'Ink Free';
+            color: white;
+            vertical-align: middle;
+            margin-top: 0;
+            font-size: 275%;
+            
+        }
+    </style>
+
+    <header>
+        <!--We will ad navigation bar here-->
+
+    </header>
+
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/DscIGDTUW/posts/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/dscigdtuw?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://github.com/dscigdtuw" class="github"><i class="fa fa-github"></i></a>
+        <a href="https://in.linkedin.com/company/dscigdtuw" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/c/DSCIGDTUW" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
+    <div id="desktop_1">
+        <center>
+            <h2 id="mystery" class="heading">Mystery Vault</h2>
+            <h3 id="description">A Steganography tool.</h3>
+        </center>
+        <center>
+            <a href="#desktop_2" class="getstarted">Get Started</a>
+        </center>
+
+    </div>
+
+    <div id="desktop_2">
+        <center>
+            <br><br>
+            <label for="img">Choose an image:</label>
+            <br><br>&emsp; &emsp;&emsp;&emsp;
+            <input type="file" id="img" name="img" accept="image/*">
+            <br><br>
+            <input type="submit" class="button">
+        </center>
+        <br><br>
+        <center>
+            &emsp;&emsp;
+            <label for="password">Password:</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label for="secret"> Secret Message:</label>
+            <br>
+            &emsp;&emsp;
+            <textarea id="password" name="password" minlength="3" maxlength="15" rows="1">            </textarea>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <textarea id="secret" name="secret" maxlength="1000" rows="1" cols="26">            </textarea>
+            <br>
+            <input type="submit" value="Encrypt" class="button">
+            <input type="submit" value="Decrypt" class="button">
+        </center>
+    </div>
+
+    <div id="about">
+        <center>
+            <br><br><br><br><br><br>
+            <h2 id="aboutus" >About Us</h2>
+            <p class="description">
+                Steganography is the practice of concealing a message within another <br>
+                message or a physical object. In computing/electronic contexts, a computer <br>
+                file, message, image, or video is concealed within another file, message, <br>
+                image, or video.
+            </p>
+        </center>
+    </div>
+
+</body>
+
+</html>

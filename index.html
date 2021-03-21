@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title> Mystery Vault </title>
     <!-- Load font awesome icons -->
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-
 awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src='sjcl.js' type='text/javascript'></script>
+    <script src='main.js' type='text/javascript'></script>
 </head>
 <body>
     <header>
@@ -27,12 +29,12 @@ awesome.min.css">
 
     <div id="desktop_1">
         <center>
-            <h2 id="mystery" class="heading">Mystery Vault</h2>
+            <h2 id="mystery">Mystery Vault</h2>
             <h3 id="description">A Steganography tool.</h3>
         </center>
         <center>
             <a href="#desktop_2" class="getstarted">Get Started</a>
-            <a href="#desktop_2" class="getstarted">Read More!</a>
+            <br><br><br>
         </center>
 
     </div>
@@ -44,22 +46,32 @@ awesome.min.css">
             <br><br>&emsp; &emsp;&emsp;&emsp;
             <input type="file" id="img" name="img" accept="image/*">
             <br><br>
-            <input type="submit" class="button">
+            <div>
+                <canvas id="canvas" class="hide" width="259" height="194"></canvas>
+            </div>
         </center>
         <br><br>
         <center>
-            &emsp;&emsp;
+            
             <label for="password">Password:</label>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            <label for="secret"> Secret Message:</label>
             <br>
-            &emsp;&emsp;
-            <textarea id="password" name="password" minlength="3" maxlength="15" rows="1">            </textarea>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            <textarea id="secret" name="secret" maxlength="1000" rows="1" cols="26">            </textarea>
+            
+            <input type="password" id="password" name="password" minlength="3" maxlength="15" rows="1">            </textarea>
+            
             <br>
-            <input type="submit" value="Encrypt" class="button">
-            <input type="submit" value="Decrypt" class="button">
+            <label for="secretd"> Secret Message:</label>
+             <div id = "secretd" >
+            </div>
+            <div id = "secretz" >
+                <textarea id="secrete" name="secret" maxlength="1000" rows="1" cols="26">            </textarea> 
+            </div>
+
+            <br>
+            <input type="submit" id = "encode" value="Encrypt" class="button">
+            <input type="submit" id ="decode" value="Decrypt" class="button">
+            <br><br>
+            
+            <img id = "output" />
         </center>
     </div>
 

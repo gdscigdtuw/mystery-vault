@@ -55,16 +55,15 @@ body{
 }
 
 #desktop_1 {
-    /*background-color: #00D1B2;*/
-    background-image: linear-gradient(to right, black, #046988, #00D1B2);
+    background-color: #a8dadc;
     height: 100vh;
     width: 100vw;
     
 }
 
 #mystery {
-    font-family: 'Ink Free';
-    color: white;
+    font-family: fantasy;
+    color: #1d3557;
     /*vertical-align: middle; */
     font-size: 350%;
     padding-top: 10%;
@@ -73,18 +72,18 @@ body{
 }
 
 #description {
-    font-family: 'Ink Free';
-    color: white;
+    font-family: cursive;
+    color: #457b9d;
     vertical-align: middle;
-    font-size: 150%;
+    font-size: 90%;
     /*padding-top: 5%;*/
 }
 
 .getstarted {
-    background-color: #EC407A;
+    background-color:#e63946;
     border: none;
     border-radius: 8px;
-    color: white;
+    color: #f1faee;
     padding: 20px 34px;
     text-align: center;
     text-decoration: none;
@@ -99,19 +98,18 @@ body{
 
 #desktop_2 {
     /*margin-top: 1%; */
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
-    background-image: linear-gradient(to right, black, #046988, #00D1B2);
-    /*background-image: linear-gradient(to right, #046988, #0fa098, #00D1B2);*/
+    background-color: #a8dadc;
     font-size: 105%;
-    font-family: 'Ink Free';
+    font-family: sans-serif;
     font-weight: bold;
-    color: white;
+    color: #1d3557;
 
 }
 
 .button {
-    background-color: #EC407A;
+    background-color: #e63946;
     /*padding: 50%, 45%;*/
     font-size: 85%;
     border: none;
@@ -121,26 +119,25 @@ body{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: 'Ink Free';
+    font-family: sans-serif;
     font-weight: bold;
 }
 
 #about {
-    background-image: linear-gradient(to right, black, #046988, #00D1B2);
+    background-color: #a8dadc;
     height: 100vh;
     width: 100vw;
     /*margin-top: 1%; */
-    color: white;
+    color: #1d3557;
     font-family: 'Ink Free';
 }
 
 #aboutus
 /*This is the heading*/
     {
-    font-family: 'Ink Free';
-    color: white;
+    font-family: sans-serif;
+    color: #1d3557;
     vertical-align: middle;
     margin-top: 0;
-    font-size: 275%;
-    
+    font-size: 175%;    
 }
